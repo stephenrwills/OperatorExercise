@@ -18,29 +18,41 @@ namespace OperatorExercise
 
             Console.WriteLine($"{a}/{b} is {quotient} remainder {remainder}");
 
-            var product = a * b;
+            int x = 10;
+            int y = 20;
 
-            Console.WriteLine($"{a}*{b} is {product}");
+            x += y;
+            Console.WriteLine(x);
+            x -= y;
+            Console.WriteLine(x);
+            x *= y;
+            Console.WriteLine(x);
 
-            var result = a + b;
+            //var product = a * b;
 
-            Console.WriteLine($"{a}+{b} is {result}");
+            //Console.WriteLine($"{a}*{b} is {product}");
 
-            var difference = a - b;
+            //var result = a + b;
 
-            Console.WriteLine($"{a}-{b} is {difference}");
+            //Console.WriteLine($"{a}+{b} is {result}");
+
+            //var difference = a - b;
+
+            //Console.WriteLine($"{a}-{b} is {difference}");
 
         }
 
-        public static void AreaOfCircle()
+        public static double AreaOfCircle()
         {
             Console.WriteLine("What is the radius of your circle?");
 
-            var r = double.Parse(Console.ReadLine());
+            double radius = double.Parse(Console.ReadLine());
 
-            var area = Math.PI * Math.Pow(r, 2);
+            var area = Math.PI * Math.Pow(radius, 2);
 
-            Console.WriteLine($"The area of a circle with radius {r} is {area}");
+            return area;
+
+            Console.WriteLine($"The area of a circle with radius {radius} is {area}");
         }
     }
 }
